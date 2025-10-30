@@ -1,0 +1,16 @@
+{
+    "name": "cristofern/projeto_pi_entrega",
+    "description": "Sou eu",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cristofer Nicolau Camargo",
+            "email": "cristofer.n.camargo@hotmail.com"
+        }
+    ],
+    "require": {}
+}
