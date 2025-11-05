@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-" 
+    />
+    <!--inicial com modo responsivo-->
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+    <!--chama o css para ajuste do layout-->
+    <title>Green Ltda.</title>
+    <!--titulo-->
+    <link rel="icon" type="image/png" href="/img/gn.jpg" />
+    <!-- ícone exibido na aba do navegador -->
+  </head>
+  <body>
+    <div class="superinfo-bg">
+      <div class="superinfo">
+        <p>Seg / Sex 09:00 as 22:00</p>
+        <a href="+55 14 9999-9999"> +55 14 9999-9999</a>
+        <!--link clicavel para o telefone-->
+        <p>Jardim verde, 1420, cidade verde-SP</p>
+      </div>
+    </div>
+    <header class="menu-bg">
+      <div class="menu" id="menu">
+        <div class="menu-logo">
+          <img src="/img/gn.jpg">
+        </div>
+        <nav class="menu-nav">
+          <ul>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <!--navegação interna usando âncoras -->
+            <li><a href="#produtos">Favoritos</a></li>
+            <li><a href="#preco">Produtos</a></li>
+            <li><a href="#qualidade">Qualidade</a></li>
+            <li><a href="../Views/home.php">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <div class="container-page">
+    <h2 class="page-title">Cadastro de Usuário</h2>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Nome</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">E-mail</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">CPF</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Celular</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Gênero</label>
+          <select class="form-select">
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Estado</label>
+          <select class="form-select">
+            <option selected>Selecione...</option>
+            <option>SP</option><option>RJ</option><option>MG</option><option>RS</option>
+            <option>PR</option><option>SC</option><option>BA</option><option>PE</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">Endereço completo</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Senha</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Confirmar senha</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Tipo de usuário</label>
+          <select class="form-select">
+            <option>Admin</option>
+            <option>Funcionário</option>
+            <option>Cliente</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+  </div>
+  </body>
+</html>

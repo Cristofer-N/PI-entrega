@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-" 
     />
     <!--inicial com modo responsivo-->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
     <!--chama o css para ajuste do layout-->
     <title>Green Ltda.</title>
     <!--titulo-->
@@ -35,6 +35,7 @@
             <li><a href="#produtos">Favoritos</a></li>
             <li><a href="#preco">Produtos</a></li>
             <li><a href="#qualidade">Qualidade</a></li>
+            <li><a href="../Models/login.html">Login</a></li>
           </ul>
         </nav>
       </div>
