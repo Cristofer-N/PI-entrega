@@ -1,3 +1,8 @@
+<?php
+// Descobre se a rota atual é a home
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$isHome = ($path === '/' || $path === '/index.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -7,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, shrink-" 
     />
     <!--inicial com modo responsivo-->
-    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <!--chama o css para ajuste do layout-->
     <title>Green Ltda.</title>
     <!--titulo-->
@@ -30,30 +35,34 @@
         </div>
         <nav class="menu-nav">
           <ul>
-            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/sobre">Quem Somos</a></li>
             <!--navegação interna usando âncoras -->
-            <li><a href="#produtos">Favoritos</a></li>
-            <li><a href="#preco">Produtos</a></li>
-            <li><a href="#qualidade">Qualidade</a></li>
-            <li><a href="../Views/home.php">Home</a></li>
-            <li><a href="cadastro-usuario.html">Cadastrar Usuário</a></li>
+            <li><a href="/lista-usuario">Lista de Usuários</a></li>
+            <li><a href="/cadastro-usuario">Cadastro</a></li>
+            <li><a href="/cadastro-produto">Cadastro de Produtos</a></li>
+            <li><a href="/login">Login</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- CONTEÚDO DAS VIEWS -->
+    <?= $content ?>
 
-    <div class="dashboard">
-    <div class="dashboard-card">
-      <h3>Usuários</h3>
-      <p>Gerencie todos os usuários do sistema.</p>
-      <a href="usuarios.html" class="btn btn-outline">Acessar</a>
+    <footer class="footer">
+      <!--definindo class para o rodapé da página-->
+      <h2>Green Ltda.</h2>
+      <p>
+        Muito mais do que apenas plantar.
+      </p>
+    </footer>
+
+    <div class="home">
+        <a href="#">
+            <img class="topo" src="/img/home.png"/>
+        </a>
     </div>
-    <div class="dashboard-card">
-      <h3>Produtos</h3>
-      <p>Controle seu estoque e cadastre novos produtos.</p>
-      <a href="produtos.html" class="btn btn-outline">Acessar</a>
-    </div>
-    </div>
+
   </body>
 </html>
